@@ -48,11 +48,11 @@ function txt() {
     $.shadowOffsetY = 1;
     $.fillText(t, (c.width - $.measureText(t).width) * 0.05, c.height * 0.10);
 }
-/*.....Randomize on click /tap.......*/
-/*window.addEventListener('mousedown',function(e){
+.....Randomize on click /tap.......
+window.addEventListener('mousedown',function(e){
     e.preventDefault();
     draw('hsla(0,0%,95%,1)', 'hsla(0,0%,90%,1)', 100, 55, 0, 0);
-}, false);*/
+}, false);
 
 window.addEventListener('touchstart',function(e){
     e.preventDefault();
