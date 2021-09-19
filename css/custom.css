@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
+@import url(https://fonts.googleapis.com/css?family=Times+New+Roman);
+
+.page-loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .4s .2s ease-in-out;
+    transition: all .4s .2s ease-in-out;
+    background-color: #eaeaea;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+}
+
+.page-loading.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-loading-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    opacity: 0;
+}
+
+.page-loading.active > .page-loading-inner {
+    opacity: 1;
+}
+
+.page-loading-inner > span {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #737491;
+}
+
+.page-spinner {
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: .75rem;
+    vertical-align: text-bottom;
+    border: .15em solid #766df4;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner .75s linear infinite;
+    animation: spinner .75s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    /*overflow: hidden;*/
+}
+
+#canv {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    backdrop-filter: blur(12px);
+    z-index: 3;
+}
+
+.tsitaat {
+    z-index: 3;
+}
+
+footer {
+    z-index: 3;
+}
+
+blockquote{
+    border-left:none
+}
+
+.quote-badge{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.quote-box{
+    overflow: hidden;
+    border-radius: 0 10px 0 10px;
+    background-color: rgb(246, 246, 246);
+    color: #a1a1a1;
+    min-height: 100px;
+    padding-left: 15px;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+
+}
+
+.quotation-mark{
+    position: absolute;
+    top: -13px;
+    font-weight: bold;
+    font-size:100px;
+    color: #a1a1a1;
+    font-family: "Times New Roman", Georgia, Serif;
+    z-index: 999;
+}
+
+.quote-text{
+    font-size: 15px;
+    padding-top: 40px;
+    margin: 0;
+    padding-right: 15px;
+}
+.media-body {
+    padding-top: 40px;
+}
