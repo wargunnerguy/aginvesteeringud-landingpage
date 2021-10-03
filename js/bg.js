@@ -46,7 +46,7 @@ function txt() {
     $.shadowBlur = 2;
     $.shadowOffsetX = 2;
     $.shadowOffsetY = 1;
-    $.fillText(t, (c.width - $.measureText(t).width) * 0.05, c.height * 0.10);
+    $.fillText(t, (c.width - $.measureText(t).width) * 0.05, c.height * 0.07);
 }
 // .....Randomize on click /tap.......
 window.addEventListener('mousedown',function(e){

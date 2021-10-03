@@ -94,14 +94,18 @@ body {
 
 .tsitaat {
     z-index: 3;
+    margin-top: 33rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
 }
 
 footer {
     z-index: 3;
+
 }
 
 blockquote{
-    border-left:none
+    border-left:none;
 }
 
 .quote-badge{
@@ -116,12 +120,14 @@ blockquote{
     min-height: 100px;
     padding-left: 15px;
     box-shadow: 2px 2px 2px 2px #E0E0E0;
+    margin-right: 65px;
 
 }
 
 .quotation-mark{
     position: absolute;
-    top: -13px;
+    top: -15px;
+    left: -10px;
     font-weight: bold;
     font-size:100px;
     color: #a1a1a1;
