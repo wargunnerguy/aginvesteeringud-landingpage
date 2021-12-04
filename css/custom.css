@@ -129,6 +129,10 @@ blockquote {
     border-left: none;
 }
 
+.media-body {
+    display: flex;
+    padding-top: 40px;
+}
 .quote-box {
     overflow: hidden;
     border-radius: 0 10px 0 10px;
@@ -137,7 +141,7 @@ blockquote {
     min-height: 100px;
     padding-left: 15px;
     box-shadow: 2px 2px 2px 2px #E0E0E0;
-    /*margin-right: 65px;*/
+    margin-right: 65px;
 }
 
 .quotation-mark {
@@ -161,9 +165,6 @@ blockquote {
 !important;
 }
 
-.media-body {
-    padding-top: 40px;
-}
 
 html body [data-ca3_iconfont="ETmodules"]::before {
     font-family: "ETmodules";
