@@ -40,13 +40,13 @@ function geo(x, y, l){
 draw('hsla(0,0%,95%,1)', 'hsla(0,0%,90%,1)', 100, 55, 0, 0);
 function txt() {
     var t   =  "AG INVESTEERINGUD".split("").join(String.fromCharCode(0x2004));
-    $.font = "1.5em Fredericka the Great";
+    $.font = "1.1em Fredericka the Great";
     $.fillStyle = 'hsla(0, 0%, 80%, 1)';
     $.shadowColor = 'hsla(0, 0%, 10%, .7)';
     $.shadowBlur = 2;
     $.shadowOffsetX = 2;
     $.shadowOffsetY = 1;
-    $.fillText(t, (c.width - $.measureText(t).width) * 0.05, c.height * 0.07);
+    $.fillText(t, (c.width - $.measureText(t).width) * 0.5, c.height * 0.07);
 }
 // .....Randomize on click /tap.......
 window.addEventListener('mousedown',function(e){
